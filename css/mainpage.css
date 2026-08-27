@@ -1,0 +1,61 @@
+:root {
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #edf4f2;
+    --color4: #7c8363;
+    --color5: #31473a;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Light.ttf);
+}
+html::-webkit-scrollbar{
+    /*width: 0px; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.ing_content .inf, .tel_content .inf, .prof_content .inf{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.ing_content .inf .item, .tel_content .inf .item, .prof_content .inf .item{ 
+    flex-basis: 200;
+    padding: 1em;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 1em;
+    margin: 1em;
+}
+.ing_content, .tel_content, .prof_content{
+    padding: 2em;
+    box-shadow: -10px 0 5px -2px #888;
+    height: 100%;
+    width: 100%;
+    color: var(--color5);
+    overflow-y: scroll;
+}
+.ing_content h1, .tel_content h1, .prof_content h1{
+    color: var(--color5);
+    margin-bottom: 1em;
+}
+.ing_content table, .tel_content table, .prof_content table{
+    width: 100%;
+}
+.item a, .item input[type=submit]{
+    color: var(--color5);
+    padding: 0.2em 1em;
+    border: 1px solid var(--color5);
+    border-radius: 1em;
+    transition: 0.3s ease;
+    background-color: var(--color3);
+    cursor: pointer;
+}
+.item a:hover, .item input[type=submit]:hover{
+    color: var(--color3);
+    background-color: var(--color5);
+}
